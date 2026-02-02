@@ -2,36 +2,66 @@
 
 **Launch to last.**
 
-The launchpad for projects that actually ship. Holder-first, trader-friendly.
+The launchpad for believers. Where real projects meet diamond hands.
 
 ---
 
 ## The Problem
 
-Current launchpads are broken:
+Current launchpads reward the wrong people:
 
-| Platform | Graduation Rate | What Happens |
-|----------|-----------------|--------------|
-| Pump.fun | **1.4%** | 98.6% of tokens die. Only 3% of users profit. |
-| Bonk.fun | Similar | Same chaos, different branding. |
+| Platform | Graduation Rate | Who Wins |
+|----------|-----------------|----------|
+| Pump.fun | **1.4%** | Snipers, bundlers, insiders |
+| Bonk.fun | Similar | Same extractors, different casino |
 
-Builders get dumped on. Believers get rugged. Extractors win.
+**98.6% of tokens die.** Only 3% of users make money. 
 
-**DiamondPad fixes this.**
+Builders get dumped on. Believers get rugged. The people who actually *care* about projects lose.
+
+**DiamondPad flips the script.**
 
 ---
 
-## Our Approach
+## The DiamondPad Difference
 
-> "The launchpad for builders who build to last."
+### For Believers
+This is **your** launchpad. We built it for people who:
+- Actually read the whitepaper
+- Hold through the dips
+- Believe in the project, not just the pump
 
-We're not another memecoin casino. We're infrastructure for projects that want:
-- **Committed holders**, not flippers
-- **Stable growth**, not pump-and-dump cycles
-- **Deep liquidity**, not bonding curve traps
-- **Real utility** — DeFi, gaming, AI agents, RWAs
+**Diamond hands get diamond treatment.** Guaranteed allocations. Priority access. Loyalty rewards that compound over time.
 
-### Target: 15%+ Graduation Rate
+### For Projects
+Your token deserves holders who stick around.
+
+| Problem | Pump.fun | DiamondPad |
+|---------|----------|------------|
+| Day 1 dump | 80%+ crash | Tiered vesting protects price |
+| No liquidity | Bonding curve trap | 15% locked LP + market makers |
+| Ghost town by week 2 | Normal | Holder rewards keep community engaged |
+| "Just another memecoin" | Default perception | Vetting = quality signal |
+
+**Real projects have a real chance here.** Our target graduation rate is 15%+ (vs 1.4% industry average).
+
+### For Traders
+We're holder-first, but traders aren't locked out.
+
+| What You Get | Details |
+|--------------|---------|
+| **Public pools** | 20% of every launch, zero staking required |
+| **Better odds** | Curated projects = fewer rugs, more winners |
+| **Volume rewards** | 10% of each launch reserved for active traders |
+| **Deep liquidity** | Mandatory LP means you can actually exit |
+
+**Your $100 flip has better odds here than a $1000 gamble on pump.fun.**
+
+---
+
+## Why It Works
+
+### The Numbers
 
 | Metric | Pump.fun | DiamondPad Target |
 |--------|----------|-------------------|
@@ -40,27 +70,16 @@ We're not another memecoin casino. We're infrastructure for projects that want:
 | 7-day Volume Retention | ~10% | **40%+** |
 | Users Profiting | 3% | **20%+** |
 
----
+### The Logic
 
-## How It Works
+1. **Vetting filters garbage** → Only real projects launch
+2. **Locked liquidity** → Projects can't rug, traders can exit
+3. **Holder tiers** → Believers get priority, not bots
+4. **Vesting protects price** → Whales can't dump day 1
+5. **Loyalty rewards** → Holding is incentivized, not punished
+6. **Trader pools** → Volume stays healthy, everyone benefits
 
-### For Projects
-
-> "You built something real. Launch it like you mean it."
-
-✅ **Rigorous vetting** = quality signal (your project stands out)  
-✅ **Mandatory liquidity + MM** = you survive week 1  
-✅ **Holder tiers** = your token lands in diamond hands, not paper  
-✅ **Post-launch tools** = your community grows, not ghosts  
-
-### For Investors
-
-> "Better projects. Better odds. Better returns."
-
-✅ **Curated launches** = fewer rugs, higher quality  
-✅ **Stake $LAUNCH** = guaranteed allocation on every drop  
-✅ **Zero-stake entry** = public pools for everyone  
-✅ **Loyalty rewards** = hold longer, earn more  
+**Virtuous cycle:** Quality projects → Diamond hand holders → Stable prices → More quality projects  
 
 ---
 
@@ -201,24 +220,39 @@ GET  /api/staking/allocation/:launchId Pool status
 
 ## Why DiamondPad Wins
 
-We're not competing with meme casinos. We're the **exit ramp** for builders who outgrew them.
+We're not competing with meme casinos. We're building something different.
 
 | | Pump.fun | DAO Maker | DiamondPad |
 |---|----------|-----------|------------|
+| **Who wins** | Extractors | Big stakers | **Believers** |
 | **Curation** | None | High | High |
 | **Entry Barrier** | Zero | High staking | **Low** (public pools) |
 | **Graduation Rate** | 1.4% | Higher | **15%+ target** |
 | **Liquidity** | Bonding curve | Varies | **Mandatory locked LP** |
 | **Holder Incentives** | None | Some | **Core focus** |
+| **Trader Access** | Wide open | Limited | **20% public pools** |
 
-**The gap we own:** High curation + Low barrier.
+### The Core Ethos
+
+**DiamondPad is for believers.**
+
+Not for snipers. Not for bundlers. Not for people who flip in 10 minutes.
+
+For people who find a project they believe in and *stay*.
+
+We make sure those people get rewarded — with better access, better prices, and better odds.
+
+And because believers stick around, projects survive. Because projects survive, traders profit. Because traders profit, volume stays healthy. Because volume stays healthy, everyone wins.
+
+**Belief is the alpha.**
 
 ---
 
 ## Taglines
 
 - *"Launch to last."*
-- *"Where builders meet believers."*
+- *"The launchpad for believers."*
+- *"Where diamond hands get diamond treatment."*
 - *"Stake once, win forever."*
 - *"Beyond the pump."*
 
