@@ -1,166 +1,237 @@
 # DiamondPad 💎
 
-**The launchpad that rewards believers, not flippers.**
+**Launch to last.**
 
-Built by [Kiki](https://colosseum.com/agent-hackathon) for the Colosseum Agent Hackathon.
+The launchpad for projects that actually ship. Holder-first, trader-friendly.
+
+---
 
 ## The Problem
 
 Current launchpads are broken:
 
-| Problem | What Happens | Who Wins |
-|---------|--------------|----------|
-| **Bundling** | Devs buy with 50 wallets at launch | Scammers |
-| **Multi-walleting** | Sybils farm airdrops/rewards | Farmers |
-| **Traders > Holders** | Quick flips = profit, holding = bags | Flippers |
-| **Dev Rugs** | No vesting, no accountability | Devs who exit |
+| Platform | Graduation Rate | What Happens |
+|----------|-----------------|--------------|
+| Pump.fun | **1.4%** | 98.6% of tokens die. Only 3% of users profit. |
+| Bonk.fun | Similar | Same chaos, different branding. |
 
-**The people who BELIEVE get punished. The extractors get rewarded.**
+Builders get dumped on. Believers get rugged. Extractors win.
 
-## The Solution
+**DiamondPad fixes this.**
 
-DiamondPad flips the incentives:
+---
 
-### 1. Hold-to-Earn 💎
-Rewards accrue based on **time held**, not just amount. The longer you hold, the more you earn.
+## Our Approach
 
-```
-Day 1-7:    1.0x rewards
-Day 8-30:   1.5x rewards  
-Day 31-90:  2.5x rewards
-Day 90+:    3.5x rewards (Diamond status)
-```
+> "The launchpad for builders who build to last."
 
-### 2. Anti-Bundle Detection 🔍
-On-chain analysis detects coordinated buying:
-- Wallets funded from same source
-- Buys within same block/transaction
-- Similar amounts, similar timing
+We're not another memecoin casino. We're infrastructure for projects that want:
+- **Committed holders**, not flippers
+- **Stable growth**, not pump-and-dump cycles
+- **Deep liquidity**, not bonding curve traps
+- **Real utility** — DeFi, gaming, AI agents, RWAs
 
-Detected bundlers get **delayed rewards** (30-day cliff) or **reduced allocation**.
+### Target: 15%+ Graduation Rate
 
-### 3. Diamond Multiplier 🏆
-True believers earn more:
-- Holder score based on hold duration across ALL DiamondPad launches
-- Higher score = priority access to new launches
-- Diamond hands from past launches = bonus allocation
+| Metric | Pump.fun | DiamondPad Target |
+|--------|----------|-------------------|
+| Graduation Rate | 1.4% | **15%+** |
+| 30-day Holder Retention | ~20% | **60%+** |
+| 7-day Volume Retention | ~10% | **40%+** |
+| Users Profiting | 3% | **20%+** |
 
-### 4. Transparent Dev Locks 🔒
-- Dev allocation vests over 6-12 months
-- Vesting schedule visible on-chain
-- Any unlock triggers community notification
-- Reputation system tracks dev behavior across launches
-
-### 5. Believer Airdrops 🎁
-- Future launches reward proven holders
-- Held through a dip? You get priority
-- Community loyalty compounds over time
-
-## Agent Integration 🤖
-
-AI agents can launch tokens through DiamondPad:
-- Agents provide: name, symbol, description, tokenomics
-- DiamondPad enforces safety rails automatically
-- Agents build reputation through successful launches
-- Bad actors (agent or human) get flagged
+---
 
 ## How It Works
 
-### For Launchers
+### For Projects
 
-```typescript
-import { DiamondPad } from 'diamondpad';
+> "You built something real. Launch it like you mean it."
 
-const pad = new DiamondPad({ wallet: myWallet });
+✅ **Rigorous vetting** = quality signal (your project stands out)  
+✅ **Mandatory liquidity + MM** = you survive week 1  
+✅ **Holder tiers** = your token lands in diamond hands, not paper  
+✅ **Post-launch tools** = your community grows, not ghosts  
 
-// Launch a token
-const launch = await pad.createLaunch({
-  name: "MyToken",
-  symbol: "MTK",
-  description: "A token for believers",
-  totalSupply: 1_000_000_000,
-  
-  // DiamondPad enforced settings
-  devAllocation: 5,           // Max 10% for devs
-  devVestingMonths: 6,        // Minimum 6 month vest
-  liquidityLock: 12,          // Minimum 12 month LP lock
-  
-  // Optional: holder rewards pool
-  holderRewardsPool: 10,      // 10% of supply for diamond hands
-});
-```
+### For Investors
 
-### For Buyers
+> "Better projects. Better odds. Better returns."
 
-```typescript
-// Buy into a launch
-const position = await pad.buy({
-  launchId: "abc123",
-  amount: 1.5,  // SOL
-});
+✅ **Curated launches** = fewer rugs, higher quality  
+✅ **Stake $LAUNCH** = guaranteed allocation on every drop  
+✅ **Zero-stake entry** = public pools for everyone  
+✅ **Loyalty rewards** = hold longer, earn more  
 
-// Check your diamond status
-const status = await pad.getHolderStatus(position.id);
-console.log(status);
-// {
-//   holdDuration: 45,  // days
-//   multiplier: 2.5,
-//   rewardsAccrued: 1250,
-//   diamondRank: "Gold"
-// }
-```
+---
 
-## API Endpoints
+## Staking Tiers
 
-```
-POST /api/launch          — Create a new token launch
-GET  /api/launch/:id      — Get launch details
-POST /api/buy             — Buy into a launch
-GET  /api/holder/:wallet  — Get holder status and rewards
-GET  /api/leaderboard     — Top diamond hands
-POST /api/claim           — Claim accrued rewards
-GET  /api/detect/:tx      — Check if transaction is bundled
-```
+Higher stakes + longer locks = better access.
+
+| Tier | Stake | Lock | Weight | Guaranteed | Perks |
+|------|-------|------|--------|------------|-------|
+| 💎 **Diamond** | 100k+ | 180 days | 10x | ✅ | Priority access, 60% fee discount |
+| 🥇 **Gold** | 50k | 90 days | 5x | ✅ | Priority access, 40% fee discount |
+| 🥈 **Silver** | 20k | 60 days | 2.5x | ❌ | 2x lottery boost, 25% fee discount |
+| 🥉 **Bronze** | 5k | 30 days | 1x | ❌ | 1.5x lottery boost, 10% fee discount |
+| 📄 **Public** | 0 | None | 0.25x | ❌ | Access to public pools |
+
+### Strong Holder Score (SHS)
+
+Your tier weight is multiplied by your SHS (0.5x - 2.0x), based on:
+- **Hold duration** across past launches
+- **Loyalty** — didn't dump allocations quickly
+- **Activity** — LP provision, governance votes
+
+*A Gold holder with 1.8x SHS beats a Diamond holder with 0.6x SHS.*
+
+---
+
+## Allocation Pools
+
+Every launch distributes tokens across multiple pools:
+
+| Pool | % | Who | Mechanism |
+|------|---|-----|-----------|
+| **Guaranteed** | 30% | Diamond/Gold stakers | Pro-rata by weight |
+| **Weighted Lottery** | 25% | All stakers | Weighted by tier + SHS |
+| **Public Lottery** | 10% | Anyone | Simple lottery, $500 max |
+| **FCFS Micro** | 5% | Anyone | First come first serve, $100 max |
+| **Flipper Pool** | 5% | Anyone | For degens, 5% exit fee |
+| **Liquidity** | 15% | Auto | Locked to DEX 12 months |
+| **Trader Rewards** | 10% | Post-launch | Volume/LP incentives |
+
+**20% of every launch is accessible with zero staking.**
+
+---
+
+## Anti-Dump Mechanics
+
+### Tiered Vesting
+
+| Allocation Size | Cliff | Vesting | TGE Unlock |
+|-----------------|-------|---------|------------|
+| < $500 | None | None | 100% |
+| $500 - $2k | None | 30 days | 50% |
+| $2k - $10k | 7 days | 60 days | 25% |
+| > $10k | 14 days | 90 days | 20% |
+
+*Small fish can flip. Whales must wait.*
+
+### Loyalty Bonuses
+
+Hold your allocation without selling:
+- **7 days** → +5% airdrop
+- **30 days** → +15% airdrop + 1.1x next launch multiplier
+- **90 days** → +25% airdrop + 1.25x permanent SHS boost
+
+---
+
+## Bundle Detection 🔍
+
+We catch coordinated buying and protect real believers:
+
+- **Same funding source** — wallets funded from same address
+- **Same block buys** — multiple buys in one block
+- **New wallet clusters** — fresh wallets buying together
+- **Timing patterns** — buys at regular intervals
+
+**Actions:**
+- Flag for review
+- Delay rewards 30 days
+- Reduce rewards 50%
+- Block participation
+
+---
 
 ## Tech Stack
 
 - **Smart Contracts**: Anchor (Solana)
 - **Token Standard**: SPL Token + Token-2022
-- **API**: Hono + TypeScript
-- **Detection**: Custom on-chain analysis
-- **Frontend**: React (coming soon)
-
-## Solana Integration
-
-- **Token Creation**: SPL Token mint with enforced authorities
-- **Vesting**: Custom vesting program with PDA-based schedules
-- **Liquidity**: Raydium/Meteora pool creation with locked LP tokens
-- **Rewards**: Merkle distributor for holder rewards
-- **Detection**: Helius webhooks + custom indexer
-
-## Roadmap
-
-- [x] Core concept and tokenomics design
-- [ ] Anti-bundle detection algorithm
-- [ ] Holder rewards smart contract
-- [ ] Token launch flow
-- [ ] API server
-- [ ] Demo launch
-- [ ] Frontend
-
-## Why This Wins
-
-This isn't another DeFi dashboard. It's **fixing broken incentives**.
-
-Every person who's been:
-- Dumped on by bundlers
-- Rugged by devs
-- Punished for believing
-
-...is a potential user.
-
-**DiamondPad: Where belief beats extraction.** 💎🙌
+- **API**: Hono + TypeScript + Bun
+- **Detection**: Custom on-chain analysis + Helius
+- **Liquidity**: Raydium/Meteora integration
 
 ---
 
-*Built with 💎 by Kiki for the Colosseum Agent Hackathon*
+## API Endpoints
+
+### Core
+```
+GET  /api/health              Health check
+GET  /api/config              Platform config
+POST /api/launch              Create launch
+GET  /api/launch/:id          Get launch details
+POST /api/buy                 Buy into launch
+GET  /api/holder/:wallet      Holder status
+GET  /api/leaderboard         Diamond hands ranking
+```
+
+### Staking
+```
+GET  /api/staking/tiers           Tier configs
+POST /api/staking/stake           Stake $LAUNCH
+POST /api/staking/unstake         Unstake (10% early penalty)
+GET  /api/staking/position/:wallet  Check position
+POST /api/staking/simulate        Preview tier benefits
+```
+
+### Allocation
+```
+POST /api/staking/allocation/init      Initialize pools
+POST /api/staking/allocation/request   Request allocation
+GET  /api/staking/allocation/:launchId Pool status
+```
+
+---
+
+## Roadmap
+
+- [x] Core tokenomics design
+- [x] Anti-bundle detection algorithm
+- [x] Staking tiers system
+- [x] Allocation pools
+- [x] API server
+- [ ] Anchor smart contracts (in progress)
+- [ ] Frontend
+- [ ] Testnet launch
+- [ ] Mainnet
+
+---
+
+## Why DiamondPad Wins
+
+We're not competing with meme casinos. We're the **exit ramp** for builders who outgrew them.
+
+| | Pump.fun | DAO Maker | DiamondPad |
+|---|----------|-----------|------------|
+| **Curation** | None | High | High |
+| **Entry Barrier** | Zero | High staking | **Low** (public pools) |
+| **Graduation Rate** | 1.4% | Higher | **15%+ target** |
+| **Liquidity** | Bonding curve | Varies | **Mandatory locked LP** |
+| **Holder Incentives** | None | Some | **Core focus** |
+
+**The gap we own:** High curation + Low barrier.
+
+---
+
+## Taglines
+
+- *"Launch to last."*
+- *"Where builders meet believers."*
+- *"Stake once, win forever."*
+- *"Beyond the pump."*
+
+---
+
+## Links
+
+- **Discord**: [discord.gg/c8DHM68G](https://discord.gg/c8DHM68G)
+- **Twitter**: Coming soon
+- **Docs**: Coming soon
+
+---
+
+*Built with 💎 by the DiamondPad team*
+
+**Serious projects deserve serious holders.**
