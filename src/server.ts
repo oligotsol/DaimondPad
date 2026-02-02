@@ -10,6 +10,7 @@ import { logger } from 'hono/logger';
 import { z } from 'zod';
 import { BundleDetector } from './detector/bundle';
 import { diamondCalculator } from './rewards/diamond';
+import { staking } from './routes/staking';
 import { 
   CreateLaunchRequest, 
   BuyRequest, 
@@ -33,6 +34,9 @@ const buyRecords: Map<string, any[]> = new Map();
 // Middleware
 app.use('*', logger());
 app.use('*', cors());
+
+// Mount staking routes
+app.route('/api/staking', staking);
 
 // ============ Health & Info ============
 
@@ -472,6 +476,18 @@ console.log(`   GET  /api/holder/:wallet`);
 console.log(`   GET  /api/leaderboard`);
 console.log(`   GET  /api/detect/:txSignature`);
 console.log(`   GET  /api/rewards/:wallet`);
+console.log(`   --- Staking ---`);
+console.log(`   GET  /api/staking/tiers`);
+console.log(`   GET  /api/staking/tiers/:tier`);
+console.log(`   POST /api/staking/stake`);
+console.log(`   POST /api/staking/unstake`);
+console.log(`   GET  /api/staking/position/:wallet`);
+console.log(`   GET  /api/staking/stats`);
+console.log(`   GET  /api/staking/pools`);
+console.log(`   POST /api/staking/allocation/init`);
+console.log(`   POST /api/staking/allocation/request`);
+console.log(`   GET  /api/staking/allocation/:launchId`);
+console.log(`   POST /api/staking/simulate`);
 
 export default {
   port,

@@ -9,6 +9,22 @@ export { BundleDetector } from './detector/bundle';
 export { DiamondRewardsCalculator, diamondCalculator } from './rewards/diamond';
 export { db } from './db/index';
 
+// Staking system
+export { 
+  StakingTierManager, 
+  stakingManager, 
+  TIER_CONFIG,
+  type StakingTier,
+  type StakerPosition 
+} from './staking/tiers';
+export { 
+  AllocationManager, 
+  allocationManager, 
+  POOL_CONFIG,
+  type AllocationPool,
+  type LaunchAllocation 
+} from './staking/allocation';
+
 // Types
 export * from './types';
 
